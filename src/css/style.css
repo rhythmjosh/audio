@@ -1,0 +1,158 @@
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    height: auto;
+    border: 1px solid #bbb;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.player__wrapper .pause__button {
+    display: none;
+}
+
+/* playing state */
+.player__wrapper.playing .play__button {
+    display: none;
+}
+
+.player__wrapper.playing .pause__button {
+    display: block;
+}
+
+/* paused state */
+.player__wrapper.paused .play__button {
+    display: block;
+}
+
+.player__wrapper.paused .pause__button {
+    display: none;
+}
+
+.image__container {
+    position: relative;
+}
+
+.audio__image {
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.audio__image:before {
+    content: '';
+    position: absolute;
+    height:200px;
+    right:0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, transparent, white);
+}
+
+.player__container {
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.player__buttons--section {
+    overflow: hidden;
+    width: 25%;
+    float: left;
+}
+
+.player__buttons--list {
+    overflow: hidden;
+    padding: 0;
+}
+
+.player__buttons--list li{
+    list-style-type: none;
+    float: left;
+    padding: 0 10px;
+}
+
+.back__button {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.play__button {
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.pause__button {
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.forward__button {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.play_icons {
+    fill: #00BD9C;
+}
+
+.play_icons:hover {
+    fill: #1DDDBC;
+}
+
+.player__video--player {
+    width: 75%;
+    float: left;
+}
+
+.progress__bar {
+    height: 4px;
+    width: 100%;
+    background-color: #E3E5E5;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.progress__bar--playing {
+    width: 0%;
+    height: 4px;
+    background-color: #9EE6D9;
+}
+
+.progress__bar--text {
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress__bar--text h5{
+    float: left;
+    margin: 0 5px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.progress__bar--text .track__name {
+    font-weight: 400;
+}
+
+.player__timers {
+    overflow: hidden;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 200;
+    color: #999B9B;
+}
+
+.player__start--timer {
+    float: left;
+}
+
+.player__stop--timer {
+    float: right;
+}
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!--jQuery 3.2.1-->
+    <script
+            src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script src="player.js"></script>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+
+    <title>FundBox front-end assignment</title>
+</head>
+<body>
+    <!-- Player markup -->
+    <div class="wrapper player__wrapper">
+        <section class="image__container">
+            <div class="audio__image">
+            </div>
+        </section>
+        <section class="player__container">
+            <div class="player__buttons--section">
+                <ul class="player__buttons--list">
+                    <li class="back__button">
+                        <svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="player-paused" transform="translate(-30.000000, -525.000000)" class="play_icons">
+                                    <g id="back" transform="translate(30.000000, 525.000000)">
+                                        <polygon id="Rectangle-Copy" transform="translate(18.000000, 10.000000) scale(-1, 1) translate(-18.000000, -10.000000) " points="10 -1.42108547e-14 26 10 10 20"></polygon>
+                                        <rect id="Rectangle-2-Copy-2" transform="translate(2.500000, 10.000000) scale(-1, 1) translate(-2.500000, -10.000000) " x="0" y="0" width="5" height="20"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </li>
+                    <li class="play__button">
+                        <svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="player-paused" transform="translate(-76.000000, -525.000000)" class="play_icons">
+                                    <polygon id="play" points="92 535 76 545 76 525"></polygon>
+                                </g>
+                            </g>
+                        </svg>
+                    </li>
+                    <li class="pause__button">
+                        <svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="pause" transform="translate(-76.000000, -525.000000)" class="play_icons">
+                                    <g transform="translate(76.000000, 525.000000)">
+                                        <rect id="Rectangle-2" x="0" y="0" width="5" height="20"></rect>
+                                        <rect id="Rectangle-2-Copy" x="11" y="0" width="5" height="20"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </li>
+                    <li  class="forward__button">
+                        <svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="player-paused" transform="translate(-112.000000, -525.000000)" class="play_icons">
+                                    <g id="forward" transform="translate(112.000000, 525.000000)">
+                                        <polygon id="Rectangle-Copy" points="0 -1.42108547e-14 16 10 0 20"></polygon>
+                                        <rect id="Rectangle-2-Copy-2" x="21" y="0" width="5" height="20"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="player__video--player">
+                <div class="progress__bar--text">
+                    <h5 class="artist__name"></h5>
+                    <h5 class="track__name"></h5>
+                </div>
+                <div class="progress__bar">
+                    <div class="progress__bar--playing"></div>
+                </div>
+                <audio class="audio__player" preload='none'>
+                    <source src='the url to the audio' type='audio/wav' />
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="player__timers">
+                    <div class="player__start--timer">0:00</div>
+                    <div class="player__stop--timer">0:00</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+</body>
+</html>
