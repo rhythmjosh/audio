@@ -8,3 +8,4 @@
 - I had already created most of the app without using any framework (react) based on instructions from the 1st assignment.
 - But given more time I would  refactor the player code and move it to a react component
 - I spent ~6-7 hours creating this app but received new instructions today so the github commit / done does not reflect correct done time.
+- I spent quite a bit time on spotify authtoken / authorization which was based on 1st instructions
